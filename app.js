@@ -1141,6 +1141,7 @@ document.addEventListener("click", (e) => {
 
 document.querySelector("#drawer-backdrop").addEventListener("click", closeCart);
 window.addEventListener("hashchange", () => {
+    closeCart();
     const hash = location.hash.slice(1);
     if (hash.startsWith("product/")) renderProduct(hash.split("/")[1]);
     else if (hash === "admin") renderAdmin();

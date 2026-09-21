@@ -629,7 +629,7 @@ p {
 }
 
 .detail-visual .product-thumb {
-    min-height: 540px;
+    min-height: clamp(260px, 45vw, 540px);
 }
 
 .detail-copy {
@@ -1288,6 +1288,6 @@ th {
     }
 
     .detail-visual .product-thumb {
-        min-height: 360px;
+        min-height: 0;
     }
 }
